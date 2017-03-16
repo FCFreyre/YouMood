@@ -19,7 +19,7 @@ $(document).ready(function(){               //once doc has loaded
         break;
       case "sad":
         window.confirm("Click OK if you'd like to wallow in your misery, and cancel if you want to turn that frown upside down!")
-        if(confirm) {
+        if(confirm === true) {
           input = "depressing"
         }else{
           input = "cute+cats"
@@ -27,7 +27,7 @@ $(document).ready(function(){               //once doc has loaded
         break;
       case "angry":
       window.confirm("Click OK if you'd like to feel the rage, and cancel if you need to cool it a bit")
-      if(confirm) {
+      if(confirm === true) {
         input = "angry+death+metal"
       }else{
         input = "ChillHop"
