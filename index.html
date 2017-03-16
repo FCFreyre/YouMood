@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YouMood</title>
+  </head>
+  <body>
+    <h1>YouMood!</h1>
+
+
+    <form id="searchForm" name="searchForm">
+      <div class="searchContainer">
+
+        <input type="text" id="query" class="searchField" placeholder="Enter Mood Here"></input>
+
+        <input type="submit" name="submitButton" id="searchButton" value="Search"></input>
+      </div>
+    </form>
+
+    <ul id="results"></ul>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+  </body>
+</html>
