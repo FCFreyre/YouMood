@@ -18,20 +18,20 @@ $(document).ready(function(){               //once doc has loaded
         input = "ChillHop"
         break;
       case "sad":
-        window.confirm("Click OK if you'd like to wallow in your misery, and cancel if you want to turn that frown upside down!")
-        if(confirm === true) {
+        var yesOrNo = window.confirm("Click OK if you'd like to wallow in your misery, and Cancel if you want to turn that frown upside down!")
+        if(yesOrNo === true) {
           input = "depressing"
         }else{
           input = "cute+cats"
         }
         break;
       case "angry":
-      window.confirm("Click OK if you'd like to feel the rage, and cancel if you need to cool it a bit")
-      if(confirm === true) {
-        input = "angry+death+metal"
-      }else{
-        input = "ChillHop"
-      }
+        var yesOrNo = window.confirm("Click OK if you'd like to feel the rage, and Cancel if you need to cool off a bit")
+        if(yesOrNo === true) {
+          input = "slayer"
+        }else{
+          input = "ChillHop"
+        }
         break;
       default:                   //goofy uses prompt of goofy, so it's default
         break;
