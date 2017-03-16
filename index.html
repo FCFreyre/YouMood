@@ -7,8 +7,14 @@
   <body>
     <h1>YouMood!</h1>
 
-
-    <form id="searchForm" name="searchForm">
+    <form class="buttonContainer" action="index.html" method="post">
+      <button class="moodButton"type="button" value="happy">Happy!</button>
+      <button class="moodButton"type="button" value="sad">...sad</button>
+      <button class="moodButton"type="button" value="angry">ANGRY</button>
+      <button class="moodButton"type="button" value="calm">calm</button>
+      <button class="moodButton"type="button" value="goofy">gOoFy</button>
+    </form>
+    <form class="searchForm" name="searchForm">
       <div class="searchContainer">
 
         <input type="text" id="query" class="searchField" placeholder="Enter Mood Here"></input>
@@ -18,6 +24,8 @@
     </form>
 
     <ul id="results"></ul>
+
+
 
 
     <script
