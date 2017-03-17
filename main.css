@@ -1,0 +1,73 @@
+
+
+body {
+  background-color: grey;
+}
+
+.nav-wrapper {
+  background-color: navy;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+}
+
+#title #caption #results{
+  display: flex;
+  justify-content: center;
+}
+
+#query {
+  width: 170%;
+}
+
+.moodButton {
+  background-repeat: no-repeat;
+  height: 5em;
+  width: 9em;
+  background-size: cover;
+  font-size: 200%;
+  margin: 1em;
+  font-style: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+
+#happy {
+  background-image: url("http://cdn3-www.cattime.com/assets/uploads/2011/08/best-kitten-names-1.jpg");
+  color: black;
+}
+
+#sad{
+  background-image: url("http://hd-wall-papers.com/images/wallpapers/sad-image/sad-image-12.jpg");
+}
+
+#angry {
+  background-image: url("http://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/wie9vyk3sw02kyurjpvm.jpg");
+}
+
+#calm {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d3/Phra_Ajan_Jerapunyo-Abbot_of_Watkungtaphao..jpg");
+  color: black;
+}
+
+#goofy {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/8b/da/c6/8bdac6d84d7c2b7561f0dc36cc141f62.png");
+}
+
+.resultZone {
+  display: flex;
+  justify-content: center;
+}

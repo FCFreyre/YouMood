@@ -2,37 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+     <link rel="stylesheet" href="main.css">
     <title>YouMood</title>
   </head>
   <body>
-    <h1>YouMood!</h1>
 
-    <form class="buttonContainer" action="index.html" method="post">
-      <button class="moodButton"type="button" value="happy">Happy!</button>
-      <button class="moodButton"type="button" value="sad">...sad</button>
-      <button class="moodButton"type="button" value="angry">ANGRY</button>
-      <button class="moodButton"type="button" value="calm">calm</button>
-      <button class="moodButton"type="button" value="goofy">gOoFy</button>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">YouMood!</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="http://youtube.com">Actual Youtube</a></li>
+          <li><a href="http://vagendamagazine.com/wp-content/uploads/2015/01/batman.jpg">NSFW Mood</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="pageTitle">
+      <h2><b>How Ya Feelin'?</b></h2>
+    </div>
+
+    <div class="row">
+      <div class="col s4"></div>
+      <div class="col s4">
+        <h7 id="caption">Click on the emotion you're feeling right now, and look below for a random YouTube video that reflects your mood!</h7>
+      </div>
+      <div class="col s4"></div>
+    </div>
+
+    <form class="buttonContainer container" action="index.html" method="post">
+      <button class="moodButton waves-effect waves-light btn"type="button" id="happy" value="happy">Happy</button>
+      <button class="moodButton waves-effect waves-light btn"type="button" id="sad" value="sad">Sad</button>
+      <button class="moodButton waves-effect waves-light btn"type="button" id="angry" value="angry">ANGRY</button>
+      <button class="moodButton waves-effect waves-light btn"type="button" id="calm" value="calm">calm</button>
+      <button class="moodButton waves-effect waves-light btn"type="button" id="goofy" value="goofy">gOoFy</button>
     </form>
     <form class="searchForm" name="searchForm">
       <div class="searchContainer">
 
-        <input type="text" id="query" class="searchField" placeholder="Enter Mood Here"></input>
+        <input type="text" id="query" class="searchField" placeholder="Don't see your mood above? Search for your own here!"></input>
 
         <input type="submit" name="submitButton" id="searchButton" value="Search"></input>
       </div>
     </form>
 
-    <ul id="results"></ul>
-
-
-
+    <ul id="results" class="responsive-video"></ul>
 
     <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <!-- my custom js -->
+    <script type="text/javascript" src="main.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=init"></script>
   </body>
 </html>

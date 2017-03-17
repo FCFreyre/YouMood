@@ -63,7 +63,7 @@ var youtube = function(input) {
     var randomNumber = Math.floor(Math.random() * 5) + 1
     var randoVidId = videoOptions[randomNumber]
 
-    $('#results').append("<iframe width='640' height='480' src='https://www.youtube.com/embed/"+randoVidId+"'></iframe>")
+    $('#results').append("<div class='resultZone'><iframe width='640' height='480' src='https://www.youtube.com/embed/"+randoVidId+"'></iframe></div>")
   })
 }
 
