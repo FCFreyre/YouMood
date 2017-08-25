@@ -13,9 +13,14 @@ body {
   justify-content: center;
 }
 
-#title #caption #results{
+#title #caption #results {
   display: flex;
   justify-content: center;
+}
+
+#caption {
+  display: flex;
+  text-align: center;
 }
 
 #query {
